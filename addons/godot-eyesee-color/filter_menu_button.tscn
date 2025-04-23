@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://8n0kk6s3rgpi"]
+
+[ext_resource type="Texture2D" uid="uid://vto0bbjdwboy" path="res://addons/godot-eyesee-color/icon.svg" id="1_dc2fq"]
+
+[node name="FilterMenuButton" type="MenuButton"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -15.5
+offset_right = 60.0
+offset_bottom = 15.5
+grow_vertical = 2
+tooltip_text = "Color Vision Deficiency (CVD) issues detection filters"
+text = "CVD"
+icon = ExtResource("1_dc2fq")
+item_count = 5
+popup/item_0/text = "None"
+popup/item_0/checkable = 2
+popup/item_0/id = 0
+popup/item_1/text = "Protanopia"
+popup/item_1/checkable = 2
+popup/item_1/id = 1
+popup/item_2/text = "Deuteranopia"
+popup/item_2/checkable = 2
+popup/item_2/id = 2
+popup/item_3/text = "Tritanopia"
+popup/item_3/checkable = 2
+popup/item_3/id = 3
+popup/item_4/text = "Achromatopsia"
+popup/item_4/checkable = 2
+popup/item_4/id = 4
