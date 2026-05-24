@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://deuo46edxoa0f"]
+
+[sub_resource type="Gradient" id="Gradient_nha35"]
+interpolation_color_space = 2
+offsets = PackedFloat32Array(0, 0.167, 0.334, 0.501, 0.668, 0.835, 1)
+colors = PackedColorArray(1, 0, 0, 1, 1.0009145, 1.0009145, 0.22769584, 1, 0, 1, 0.30980393, 1, 0, 1.0110263, 1.0110263, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ewnj5"]
+gradient = SubResource("Gradient_nha35")
+fill_from = Vector2(0, 1)
+fill_to = Vector2(1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nha35"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Showcase" type="Control" unique_id=802268820]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Rainbow" type="TextureRect" parent="." unique_id=1298879162]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_ewnj5")
+
+[node name="Info" type="RichTextLabel" parent="." unique_id=1489189728]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -261.0
+offset_top = -47.0
+offset_right = 261.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_nha35")
+bbcode_enabled = true
+text = "Press [img]res://addons/godot-eyesee/icon.svg[/img] CVD button on top pannel and select one of the filters."
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1

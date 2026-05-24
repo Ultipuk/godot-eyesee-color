@@ -17,3 +17,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 config/name="Godot Eyesee Plugin"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="uid://dw3obx85ymn52"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot-eyesee/plugin.cfg")

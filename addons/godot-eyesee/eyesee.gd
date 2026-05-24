@@ -25,13 +25,13 @@ var spatial_4_subviewport_container: SubViewportContainer
 
 
 func _enter_tree() -> void:
-	canvas_menu_button = preload("res://addons/godot-eyesee-color/filter_menu_button.tscn").instantiate()
-	spatial_menu_button = preload("res://addons/godot-eyesee-color/filter_menu_button.tscn").instantiate()
+	canvas_menu_button = preload("res://addons/godot-eyesee/filter_menu_button.tscn").instantiate()
+	spatial_menu_button = preload("res://addons/godot-eyesee/filter_menu_button.tscn").instantiate()
 	
-	protanopia_material = preload("res://addons/godot-eyesee-color/materials/protanopia.material")
-	deuteranopia_material = preload("res://addons/godot-eyesee-color/materials/deuteranopia.material")
-	tritanopia_material = preload("res://addons/godot-eyesee-color/materials/tritanopia.material")
-	achromatopsia_material = preload("res://addons/godot-eyesee-color/materials/achromatopsia.material")
+	protanopia_material = preload("res://addons/godot-eyesee/materials/protanopia.material")
+	deuteranopia_material = preload("res://addons/godot-eyesee/materials/deuteranopia.material")
+	tritanopia_material = preload("res://addons/godot-eyesee/materials/tritanopia.material")
+	achromatopsia_material = preload("res://addons/godot-eyesee/materials/achromatopsia.material")
 	
 	add_control_to_container(EditorPlugin.CONTAINER_CANVAS_EDITOR_MENU, canvas_menu_button)
 	add_control_to_container(EditorPlugin.CONTAINER_SPATIAL_EDITOR_MENU, spatial_menu_button)
