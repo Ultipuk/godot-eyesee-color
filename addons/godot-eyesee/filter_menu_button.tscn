@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://8n0kk6s3rgpi"]
+[gd_scene format=3 uid="uid://8n0kk6s3rgpi"]
 
-[ext_resource type="Texture2D" uid="uid://vto0bbjdwboy" path="res://addons/godot-eyesee-color/icon.svg" id="1_dc2fq"]
+[ext_resource type="Texture2D" uid="uid://vto0bbjdwboy" path="res://addons/godot-eyesee/icon.svg" id="1_dc2fq"]
 
 [node name="FilterMenuButton" type="MenuButton"]
 anchors_preset = 4
